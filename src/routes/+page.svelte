@@ -37,8 +37,11 @@
 // });
 onMount(() => {
         const div = document.getElementById('svelte-div');
+
         if (div) {
-            div.style.visibility = 'visible'; // Only modify if element exists
+            requestAnimationFrame(() => {
+                div.style.visibility = 'visible'; // Ensure styles are applied
+            });
         }
     });
 

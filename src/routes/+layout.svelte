@@ -13,7 +13,7 @@
 </script>
 
 <div class={`body contents ${$theme ? 'theme-dark' : 'theme-light'}`}>
-	<SplashScreen/>
+
 	<NavMenu />
 	<div class="content container"><slot /></div>
 </div>
