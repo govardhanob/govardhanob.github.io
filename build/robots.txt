@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://govardhanob.github.io/sitemap.xml
