@@ -13,9 +13,7 @@ const config = {
 	},
 	kit: {
 		adapter: adapter({
-			// Output the build to /docs for GitHub Pages
-			pages: 'docs',
-			assets: 'docs',
+			
 			fallback: '404.html' // Helps handle GitHub Pages routing
 		}),
 		alias: {
