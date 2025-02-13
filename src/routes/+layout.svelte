@@ -13,20 +13,7 @@
 	let showSplash = writable(false);
 	let showHome = writable(false);
 
-	onMount(() => {
-		onHydrated();
-		page.subscribe(p => {
-			if (p.url.pathname === '/') {
-				showSplash.set(true);
-				setTimeout(() => {
-					showSplash.set(false);
-					showHome.set(true);
-				}, 1000);
-			} else {
-				showHome.set(true);
-			}
-		});
-	});
+
 </script>
 
 <div class={`body contents ${$theme ? 'theme-dark' : 'theme-light'}`}>

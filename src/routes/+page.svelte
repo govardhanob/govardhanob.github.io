@@ -21,20 +21,20 @@
 	};
 
     let reactAppUrl = "https://shiny-bunny-699b7f.netlify.app/";
-    let showSplash: boolean | null = null; 
-onMount(() => {
-    if (typeof window !== "undefined") {
-        if (localStorage.getItem("hasVisited")) {
-            showSplash = false; // User has visited, go straight to home page
-        } else {
-            localStorage.setItem("hasVisited", "true");
-            showSplash = true;
-            setTimeout(() => {
-                showSplash = false;
-            }, 1000);
-        }
-    }
-});
+//     let showSplash: boolean | null = null; 
+// onMount(() => {
+//     if (typeof window !== "undefined") {
+//         if (localStorage.getItem("hasVisited")) {
+//             showSplash = false; // User has visited, go straight to home page
+//         } else {
+//             localStorage.setItem("hasVisited", "true");
+//             showSplash = true;
+//             setTimeout(() => {
+//                 showSplash = false;
+//             }, 1000);
+//         }
+//     }
+// });
 
 
     // Hide splash screen after 1 second
@@ -74,9 +74,9 @@ onMount(() => {
         }
         </script>
 </svelte:head>
-{#if showSplash === true}
-    <SplashScreen />
-{:else if showSplash === false}
+
+
+
     <!-- Main content here -->
     <div class="main-container">
         <Particle />
@@ -98,4 +98,3 @@ onMount(() => {
         </div>
     </div>
     <IframeComponent {reactAppUrl} />
-{/if}

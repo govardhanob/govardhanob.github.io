@@ -2,29 +2,31 @@
     import { onMount } from 'svelte';
     import { writable } from 'svelte/store';
 
-    const greetings = ["Hi","ഹായ്", "Hola", "Bonjour", "Hallo", "Ciao", "こんにちは", "नमस्ते", "你好", "Привет", "안녕하세요"];
+    const greetings = ["Hi", "ഹായ്", "Hola", "Bonjour", "Hallo", "Ciao", "こんにちは", "नमस्ते", "你好", "Привет", "안녕하세요"];
 
     let index = writable(0);
-    let showSplash = writable(true);
+    let showSplash = writable(false);
 
     onMount(() => {
-        const textInterval = setInterval(() => {
-            index.update(n => n + 1);
-        }, 100);
-
-        // Stop interval & hide splash exactly at 1000ms
-        setTimeout(() => {
-            clearInterval(1000);
+        // Check if user is visiting for the first time
+        if (!localStorage.getItem("visited")) {
+            showSplash.set(true);
+            localStorage.setItem("visited", "true"); // Mark as visited
             
-            showSplash.update(() => false);
-				
-        }, 1000);
+            const textInterval = setInterval(() => {
+                index.update(n => n + 1);
+            }, 100);
+
+            // Stop interval & hide splash exactly at 1000ms
+            setTimeout(() => {
+                clearInterval(textInterval);
+                showSplash.set(false);
+            }, 1000);
+        }
     });
 </script>
 
 {#if $showSplash}
-
-
     <div class="splash-screen">
         <span class="greeting">{greetings[$index] ?? greetings[greetings.length - 1]}</span>
     </div>
