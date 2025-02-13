@@ -27,7 +27,7 @@ const config = {
 			'@utils': './src/lib/utils'
 		},
 		paths: {
-			base: ''
+			base:  '/govardhanob.github.io' 
 		},
 		prerender: {
 			
