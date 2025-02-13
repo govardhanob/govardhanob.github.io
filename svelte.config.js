@@ -1,16 +1,14 @@
 import adapter from '@sveltejs/adapter-static';
 import { vitePreprocess } from '@sveltejs/kit/vite';
 
-const base = '/portfolio';
+const base = '';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	// Consult https://kit.svelte.dev/docs/integrations#preprocessors
 	// for more information about preprocessors
 	preprocess: vitePreprocess(),
-	vitePlugin: {
-		
-	},
+	
 	kit: {
 		adapter: adapter({
 			
@@ -25,7 +23,7 @@ const config = {
 			'@utils': './src/lib/utils'
 		},
 		paths: {
-			base:  '/govardhanob.github.io' 
+			base: base
 		},
 		prerender: {
 			
