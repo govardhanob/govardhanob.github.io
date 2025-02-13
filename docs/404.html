@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<meta name="viewport" content="width=device-width" />
+		
+		<link rel="modulepreload" href="/_app/immutable/entry/start.2c85aaae.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/scheduler.12722033.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/singletons.8ad4e79f.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/paths.1698b0c3.js">
+		<link rel="modulepreload" href="/_app/immutable/entry/app.0d3f2718.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/index.13a1735a.js">
+	</head>
+	<script>
+		(function () {
+			let theme = localStorage.getItem('theme') || 'dark';
+			document.documentElement.setAttribute('data-theme', theme);
+			document.documentElement.style.backgroundColor = theme === 'dark' ? 'var(--dark-0)' : 'var(--light-0)';
+		})();
+
+		
+	</script>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">
+			<script>
+				{
+					__sveltekit_hyclb1 = {
+						base: "",
+						env: {}
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("/_app/immutable/entry/start.2c85aaae.js"),
+						import("/_app/immutable/entry/app.0d3f2718.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element);
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>
