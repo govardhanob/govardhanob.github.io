@@ -15,7 +15,7 @@ export const links: Array<{ platform: Platform; link: string }> = [
 	{ platform: Platform.GitHub, link: 'https://github.com/govardhanob' },
 	{
 		platform: Platform.Linkedin,
-		link: 'https://www.linkedin.com/in/govardhan-ob/'
+		link: 'https://www.linkedin.com/in/govardhanob?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app/'
 	},
 	
 	
