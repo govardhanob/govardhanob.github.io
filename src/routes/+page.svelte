@@ -42,7 +42,7 @@ onMount(() => {
             requestAnimationFrame(() => {
                 setTimeout(() => {
                     div.style.visibility = 'visible';
-                }, 100); // Waits until next render cycle
+                }, 1000); // Waits until next render cycle
             });
         }
     });
