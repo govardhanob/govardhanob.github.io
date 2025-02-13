@@ -24,16 +24,21 @@
 	<nav class="container flex flex-row items-center text-sm">
 		<a
 			href={`${base}/`}
+			on:click={() => toggleExpanded(false)}
+			
 			class="nav-menu-left decoration-none w-auto md:w-150px lg:w-auto row flex flex-row items-center cursor-pointer px-4 text-[var(--secondary-text)] self-stretch hover:bg-[color:var(--main-hover)]"
 		>
 			<UIcon icon="i-carbon-code" classes="text-2em" />
 			<a
 			href={`${base}/`}
+			on:click={() => toggleExpanded(false)}
 				class="ml-2 text-md font-bold hidden md:inline overflow-hidden whitespace-nowrap text-ellipsis"
 				>Govardhan
 			</a>
 		</a>
-		<a href={`${base}/`} class="flex-1 block overflow-hidden md:hidden whitespace-nowrap text-ellipsis text-center">
+		<a href={`${base}/`}
+		on:click={() => toggleExpanded(false)}
+		 class="flex-1 block overflow-hidden md:hidden whitespace-nowrap text-ellipsis text-center">
 			Govardhan
 		</a>
 		<div class="flex-row flex-1 self-center h-full justify-center hidden md:flex">
@@ -83,7 +88,12 @@
 	a{
 		text-decoration: none;
 		color: white;
+		outline: none;
 	}
+
+a {
+    -webkit-tap-highlight-color: transparent; /* Disables touch highlight on mobile */
+}
 	.nav-menu {
 		display: flex;
 		justify-content: center;

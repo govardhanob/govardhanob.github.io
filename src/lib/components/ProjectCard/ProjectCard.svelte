@@ -44,10 +44,9 @@
 		</div>
 		<CardDivider />
 		<div class="row items-center gap-2">
-			<UIcon icon="i-carbon-time" classes="text-1.25em" />
-			<p>{period}</p>
+			
 		</div>
-		<CardDivider />
+		
 	</div>
 	<div class="col sm:h-100px md:h-160px">
 		<p class="text-[0.9em] text-[var(--secondary-text)] m-t-20px m-b-40px flex-1 line-clamp-3">
@@ -55,10 +54,7 @@
 		</p>
 	</div>
 	<div class="row justify-between text-0.8em font-400">
-		<Chip>{from}</Chip>
-		{#if from !== to}
-			<Chip>{to}</Chip>
-		{/if}
+		
 	</div>
 	<CardDivider />
 	<div class="row flex-wrap">
