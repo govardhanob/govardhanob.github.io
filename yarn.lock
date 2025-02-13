@@ -43,6 +43,25 @@
     minimatch "^3.1.2"
     strip-json-comments "^3.1.1"
 
+"@floating-ui/core@^1.2.6":
+  version "1.6.9"
+  resolved "https://registry.npmjs.org/@floating-ui/core/-/core-1.6.9.tgz"
+  integrity sha512-uMXCuQ3BItDUbAMhIXw7UPXRfAlOAvZzdK9BWpE60MCn+Svt3aLn9jsPTi/WNGlRUu2uI0v5S7JiIUsbsvh3fw==
+  dependencies:
+    "@floating-ui/utils" "^0.2.9"
+
+"@floating-ui/dom@1.2.8":
+  version "1.2.8"
+  resolved "https://registry.npmjs.org/@floating-ui/dom/-/dom-1.2.8.tgz"
+  integrity sha512-XLwhYV90MxiHDq6S0rzFZj00fnDM+A1R9jhSioZoMsa7G0Q0i+Q4x40ajR8FHSdYDE1bgjG45mIWe6jtv9UPmg==
+  dependencies:
+    "@floating-ui/core" "^1.2.6"
+
+"@floating-ui/utils@^0.2.9":
+  version "0.2.9"
+  resolved "https://registry.npmjs.org/@floating-ui/utils/-/utils-0.2.9.tgz"
+  integrity sha512-MDWhGtE+eHw5JW7lq4qhc5yRLS11ERl1c7Z6Xd0a58DozHES6EnNNwUWbMiG4J9Cgj053Bhk8zvlhFYKVhULwg==
+
 "@humanwhocodes/config-array@^0.11.8":
   version "0.11.8"
   resolved "https://registry.npmjs.org/@humanwhocodes/config-array/-/config-array-0.11.8.tgz"
@@ -163,6 +182,11 @@
     estree-walker "^2.0.2"
     picomatch "^2.3.1"
 
+"@stitches/core@1.2.8":
+  version "1.2.8"
+  resolved "https://registry.npmjs.org/@stitches/core/-/core-1.2.8.tgz"
+  integrity sha512-Gfkvwk9o9kE9r9XNBmJRfV8zONvXThnm1tcuojL04Uy5uRyqg93DC83lDebl0rocZCfKSjUv+fWYtMQmEDJldg==
+
 "@sveltejs/adapter-auto@2.1.0":
   version "2.1.0"
   resolved "https://registry.npmjs.org/@sveltejs/adapter-auto/-/adapter-auto-2.1.0.tgz"
@@ -213,6 +237,19 @@
     magic-string "^0.30.0"
     svelte-hmr "^0.15.2"
     vitefu "^0.2.4"
+
+"@svelteuidev/composables@0.15.7":
+  version "0.15.7"
+  resolved "https://registry.npmjs.org/@svelteuidev/composables/-/composables-0.15.7.tgz"
+  integrity sha512-tVA+0bNtsYsJqlpNx9ZArzHFBJYfoKM+nspkv+wzOx40HsCg33MutqNexOvrMYSj5/tSxxBefLQKdwNumErF6Q==
+
+"@svelteuidev/core@^0.15.7":
+  version "0.15.7"
+  resolved "https://registry.npmjs.org/@svelteuidev/core/-/core-0.15.7.tgz"
+  integrity sha512-lTUjQdGhiNK5as3mBZgsixNsgH/RcwhGdSQpc7wNEASkgJSyPsv2hiak/m4a78pDJ3owrRAWbURu17hE9eF/tw==
+  dependencies:
+    "@floating-ui/dom" "1.2.8"
+    "@stitches/core" "1.2.8"
 
 "@tsparticles/basic@3.8.1":
   version "3.8.1"
@@ -2202,7 +2239,7 @@ svelte-preprocess@^5.0.4:
     sorcery "^0.11.0"
     strip-indent "^3.0.0"
 
-"svelte@^3.19.0 || ^4.0.0-next.0", svelte@^3.2.0, "svelte@^3.23.0 || ^4.0.0-next.0 || ^4.0.0", "svelte@^3.54.0 || ^4.0.0", "svelte@^3.54.0 || ^4.0.0-next.0", "svelte@^3.55.0 || ^4.0.0-next.0 || ^4.0.0", svelte@^4.2.17, svelte@4.2.1:
+"svelte@^3.19.0 || ^4.0.0-next.0", svelte@^3.2.0, "svelte@^3.23.0 || ^4.0.0-next.0 || ^4.0.0", "svelte@^3.54.0 || ^4.0.0", "svelte@^3.54.0 || ^4.0.0-next.0", "svelte@^3.55.0 || ^4.0.0-next.0 || ^4.0.0", svelte@^4.2.17, svelte@>=3.55.0, svelte@4.2.1:
   version "4.2.1"
   resolved "https://registry.npmjs.org/svelte/-/svelte-4.2.1.tgz"
   integrity sha512-LpLqY2Jr7cRxkrTc796/AaaoMLF/1ax7cto8Ot76wrvKQhrPmZ0JgajiWPmg9mTSDqO16SSLiD17r9MsvAPTmw==

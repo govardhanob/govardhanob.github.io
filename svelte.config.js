@@ -11,7 +11,7 @@ const config = {
 	
 	kit: {
 		adapter: adapter({
-			
+			precompress: true ,
 			fallback: '404.html' // Helps handle GitHub Pages routing
 		}),
 		alias: {

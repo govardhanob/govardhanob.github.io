@@ -8,17 +8,7 @@
 	import { writable } from 'svelte/store';
 	import { page } from '$app/stores';
 
-	onMount(() => {
-        const div = document.getElementById('svelte-div');
 
-        if (div) {
-            requestAnimationFrame(() => {
-                setTimeout(() => {
-                    div.style.visibility = 'visible';
-                }, 0); // Waits until next render cycle
-            });
-        }
-    });
 
 </script>
 

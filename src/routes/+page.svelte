@@ -35,17 +35,17 @@
 //         }
 //     }
 // });
-// onMount(() => {
-//         const div = document.getElementById('svelte-div');
+onMount(() => {
+        const div = document.getElementById('svelte-div');
 
-//         if (div) {
-//             requestAnimationFrame(() => {
-//                 setTimeout(() => {
-//                     div.style.visibility = 'visible';
-//                 }, 0); // Waits until next render cycle
-//             });
-//         }
-//     });
+        if (div) {
+            requestAnimationFrame(() => {
+                setTimeout(() => {
+                    div.style.visibility = 'visible';
+                }, 100); // Waits until next render cycle
+            });
+        }
+    });
 
     // Hide splash screen after 1 second
  
