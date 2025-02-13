@@ -35,7 +35,12 @@
 //         }
 //     }
 // });
-
+onMount(() => {
+        const div = document.getElementById('svelte-div');
+        if (div) {
+            div.style.visibility = 'visible'; // Only modify if element exists
+        }
+    });
 
     // Hide splash screen after 1 second
  

@@ -7,16 +7,13 @@
 	import SplashScreen from '$lib/components/SplashScreen.svelte';
 	import { writable } from 'svelte/store';
 	import { page } from '$app/stores';
-	// ? moved to +layout.server.ts : will be deleted when we make sure that everything is alright
-	// export const prerender = true;
-	// ✅ Correctly define writable stores
-	let showSplash = writable(false);
-	let showHome = writable(false);
+
 
 
 </script>
 
 <div class={`body contents ${$theme ? 'theme-dark' : 'theme-light'}`}>
+	<SplashScreen/>
 	<NavMenu />
 	<div class="content container"><slot /></div>
 </div>
