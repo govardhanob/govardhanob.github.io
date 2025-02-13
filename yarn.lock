@@ -243,13 +243,6 @@
   resolved "https://registry.npmjs.org/@svelteuidev/composables/-/composables-0.15.7.tgz"
   integrity sha512-tVA+0bNtsYsJqlpNx9ZArzHFBJYfoKM+nspkv+wzOx40HsCg33MutqNexOvrMYSj5/tSxxBefLQKdwNumErF6Q==
 
-"@svelteuidev/core@^0.15.7":
-  version "0.15.7"
-  resolved "https://registry.npmjs.org/@svelteuidev/core/-/core-0.15.7.tgz"
-  integrity sha512-lTUjQdGhiNK5as3mBZgsixNsgH/RcwhGdSQpc7wNEASkgJSyPsv2hiak/m4a78pDJ3owrRAWbURu17hE9eF/tw==
-  dependencies:
-    "@floating-ui/dom" "1.2.8"
-    "@stitches/core" "1.2.8"
 
 "@tsparticles/basic@3.8.1":
   version "3.8.1"
