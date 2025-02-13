@@ -29,6 +29,10 @@ const config = {
 		paths: {
 			base: process.env.NODE_ENV === 'production' ? base : ''
 		},
+		prerender: {
+			
+			entries: ['*', '/experience/[slug]', '/skills/[slug]'] // Exclude dynamic routes
+		}
 	
 		
 		

@@ -52,7 +52,6 @@ onMount(() => {
     <!-- Open Graph for Social Sharing -->
     <meta property="og:title" content="Govardhan OB | Full Stack Developer">
     <meta property="og:description" content="Explore my portfolio to see my latest projects, skills, and web development expertise.">
-    <meta property="og:image" content="%sveltekit.assets%/favicon-32x32.png">
     <meta property="og:url" content="https://govardhanob.github.io/">
     <meta property="og:type" content="website">
 
